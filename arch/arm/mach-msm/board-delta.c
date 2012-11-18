@@ -115,10 +115,11 @@
 #endif
 #if	defined(CONFIG_MACH_MSM7X27_SHAKIRA)
 #define MSM_PMEM_MDP_SIZE      0xB00000 //4MB for camera + 7MB for gralloc
+#define MSM_PMEM_ADSP_SIZE     0x6DE000
 #else
-#define MSM_PMEM_MDP_SIZE      0x800000 //4MB for camera + 4MB for gralloc
+#define MSM_PMEM_MDP_SIZE      0xB00000 //4MB for camera + 7MB for gralloc
+#define MSM_PMEM_ADSP_SIZE     0x6DE000
 #endif
-#define MSM_PMEM_ADSP_SIZE     0x1C4000
 #ifdef CONFIG_CAPTURE_KERNEL
 #include "smd_private.h"
 #endif
